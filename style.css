@@ -4,3 +4,13 @@
   width: 960px;
   background-color: gray;
 }
+.nav {
+  background-color: green;
+  padding: 10px;
+}
+.nav-logo {
+  background-color: blue;
+}
+.nav-links {
+  background-color: yellow;
+}
