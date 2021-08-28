@@ -1,0 +1,6 @@
+#wrapper {
+  box-sizing: border-box;
+  margin: auto auto;
+  width: 960px;
+  background-color: gray;
+}
