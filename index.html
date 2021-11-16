@@ -17,62 +17,99 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/9a4546f921.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Projekt_1</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div id="wrapper">
+      <!-- HEADER -->
+
       <nav class="nav">
         <header class="nav-logo">Nazwa firmy</header>
         <ul class="nav-links">
-          <li class="nav-link"><a href="#">O nas</a></li>
-          <li class="nav-link"><a href="#">Oferta</a></li>
-          <li class="nav-link"><a href="#">Kontakt</a></li>
+          <li class="nav-link"><a href="#about">o nas</a></li>
+          <li class="nav-link"><a href="#offer">oferta</a></li>
+          <li class="nav-link">
+            <a class="link-contact">kontakt</a>
+          </li>
         </ul>
       </nav>
+
+      <!-- INTRO -->
+
       <main>
         <section class="introduction">
-          <div class="introduction-header"></div>
-          <h1>Nasza firma oferuje najwyższej jakości produkty.</h1>
-          <h2>Nie wierz nam na słowo - sprawdź</h2>
-          <button><h3>oferta</h3></button>
+          <div class="introduction-header">
+            <h1 class="intro-h1">
+              Nasza firma oferuje <br />najwyższej jakości produkty.
+            </h1>
+            <h2 class="intro-h2">Nie wierz nam na słowo - sprawdź</h2>
+            <button class="btn"><a href="#offer">oferta</a></button>
+          </div>
         </section>
-        <section class="specialist">
+
+        <!-- SPECIALIST -->
+
+        <section class="specialist" id="about">
           <h1>Nasi specjaliści</h1>
           <div class="worker">
-            <p>
-              Imię Nazwisko [ dział ] Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit. Morbi vel massa et lacus egestas cursus a non
-              magna. Fusce scelerisque blandit nunc, id malesuada ex lobortis a.
-              Integer felis nisi, tempor elementum lorem in, varius pellentesque
-              ligula. Duis efficitur lacinia enim, non tincidunt libero ultrices
-              in.
-            </p>
+            <div class="worker-face"></div>
+            <div class="worker-data">
+              <h2>Imię Nazwisko [ dział ]</h2>
+              <p class="worker-lorem">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+                vel massa et lacus egestas cursus a non magna. Fusce scelerisque
+                blandit nunc, id malesuada ex lobortis a. Integer felis nisi,
+                tempor elementum lorem in, varius pellentesque ligula. Duis
+                efficitur lacinia enim, non tincidunt libero ultrices in.
+              </p>
+            </div>
           </div>
           <div class="worker">
-            <p>
-              Imię Nazwisko [ dział ] Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit. Morbi vel massa et lacus egestas cursus a non
-              magna. Fusce scelerisque blandit nunc, id malesuada ex lobortis a.
-              Integer felis nisi, tempor elementum lorem in, varius pellentesque
-              ligula. Duis efficitur lacinia enim, non tincidunt libero ultrices
-              in.
-            </p>
+            <div class="worker-face"></div>
+            <div class="worker-data">
+              <h2>Imię Nazwisko [ dział ]</h2>
+              <p class="worker-lorem">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+                vel massa et lacus egestas cursus a non magna. Fusce scelerisque
+                blandit nunc, id malesuada ex lobortis a. Integer felis nisi,
+                tempor elementum lorem in, varius pellentesque ligula. Duis
+                efficitur lacinia enim, non tincidunt libero ultrices in.
+              </p>
+            </div>
           </div>
         </section>
-        <section class="service">
-          <h1>Czym zajmuje się nasza firma?</h1>
-          <ul class="list-services">
-            <li class="list-serv">Usługa 1 (nowość)</li>
-            <li class="list-serv">Usługa 2</li>
-            <li class="list-serv">Usługa 3</li>
-            <li class="list-serv">Usługa 4</li>
-            <li class="list-serv">Usługa 5</li>
-            <li class="list-serv">Usługa 6</li>
-          </ul>
+
+        <!-- SERVICE -->
+
+        <section class="service" id="offer">
+          <h1 class="serv-title">Czym zajmuje się nasza firma?</h1>
+
+          <div class="serv-wrapper">
+            <div class="serv-box">
+              <div class="dot"></div>
+              <p class="serv">Usługa 1 (nowość)</p>
+            </div>
+            <div class="serv-box"><p class="serv">Usługa 2</p></div>
+            <div class="serv-box"><p class="serv">Usługa 3</p></div>
+            <div class="serv-box"><p class="serv">Usługa 4</p></div>
+            <div class="serv-box"><p class="serv">Usługa 5</p></div>
+            <div class="serv-box"><p class="serv">Usługa 6</p></div>
+          </div>
         </section>
       </main>
-      <footer>Nazwa firmy - wszelkie prawa zastrzeżone, 2021</footer>
+      <!-- FOOTER -->
+      <footer class="footer">
+        <div>Nazwa firmy - wszelkie prawa zastrzeżone, 2021</div>
+        <div class="socios">
+          <a class="insta" href=""><i class="fab fa-instagram"></i></a>
+          <a class="fbook" href=""><i class="fab fa-facebook-square"></i></a>
+        </div>
+      </footer>
     </div>
   </body>
 </html>
