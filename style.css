@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 #wrapper {
   box-sizing: border-box;
   margin: auto auto;
@@ -9,34 +14,29 @@
 .nav {
   background-color: #020204;
   height: 50px;
-  /* padding: 10px; */
   display: flex;
   justify-content: space-between;
   font-family: Roboto;
   font-style: normal;
   font-size: 18px;
   color: #ffffff;
+  padding: 1%;
 }
 .nav-logo {
-  /* background-color: rgb(255, 0, 0); */
   display: flex;
   align-items: center;
   justify-content: center;
-  /* line-height: 21px; */
   width: 20%;
   margin-left: 35px;
   font-weight: bold;
-  /* background-color: rgba(0, 0, 0, 0.2); */
 }
 .nav-links {
-  /* background-color: yellow; */
   margin-right: 33px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
   font-weight: normal;
-  /* justify-content: space-around; */
   width: 40%;
 }
 .nav-link a {
@@ -48,23 +48,28 @@
   cursor: not-allowed;
 }
 /* ------------------------------------------INTRO--------------------------------------- */
-
+main {
+  background-color: #f1f1f1;
+}
 .introduction {
   max-width: 1024px;
   margin: 0 auto;
-  /* background-color: #aaa; */
   height: 100vh;
   background-image: url("https://images.unsplash.com/photo-1614730073452-26212f842765?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1024&q=80");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  padding: 1%;
 }
 
 .introduction-header {
-  /* height: 93vh; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
   margin-left: 80px;
-  /* background-color: rgba(0, 0, 0, 0.2); */
 }
 .intro-h1 {
   width: 50%;
@@ -104,6 +109,8 @@
   background: rgba(0, 0, 0, 0.15);
   border: 2px solid #ffffff;
   transition: 1s;
+  display: flex;
+  align-items: center;
 }
 .btn a {
   /* padding-top: 5px; */
@@ -126,13 +133,16 @@
 /* -------------------------------------------SPECIALIST---------------------------------------- */
 
 .specialist {
-  height: 100vh;
+  height: auto;
   background: #f1f1f1;
   color: #000000;
+  display: flex;
+  flex-direction: column;
+  padding: 1%;
 }
 
 .specialist h1 {
-  height: 20vh;
+  height: 15vh;
   width: 386px;
   margin-left: 80px;
   font-family: Roboto;
@@ -146,69 +156,84 @@
   color: #152d41;
 }
 .worker {
-  height: 40vh;
-  display: flex;
-  justify-content: left;
+  height: auto;
   align-items: center;
-  margin-left: 10px;
+  display: flex;
+  margin-left: 80px;
+  margin-right: 50px;
 }
+
 .worker-face {
-  background-image: url(https://randomuser.me/api/portraits/lego/6.jpg);
+  background-image: url(https://randomuser.me/api/portraits/lego/2.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  margin-left: 65px;
-  margin-right: 60px;
+  display: flex;
   width: 197px;
   height: 197px;
-  /* height: 19vmin;
-  width: 20vmin; */
   border-radius: 50%;
+  margin-right: 40px;
 }
 .worker-data {
-  width: 50vw;
   font-family: Roboto;
   font-style: normal;
-  font-weight: normal;
   font-size: 18px;
   line-height: 21px;
+  display: flex;
+  flex-direction: column;
+  width: 550px;
+  margin-right: auto;
 }
 .worker-data h2 {
   font-weight: bold;
   font-size: 18px;
   margin-bottom: 25px;
+  display: flex;
+  flex-direction: column;
 }
-
 .worker:nth-of-type(even) {
   display: flex;
+  flex-direction: column;
   flex-direction: row-reverse;
-  margin-left: 45px;
-  margin-right: 30px;
-}
-.worker:nth-of-type(even) .worker-face {
-  background-image: url(https://randomuser.me/api/portraits/lego/0.jpg);
+  margin-bottom: 25px;
 }
 
+.worker:nth-of-type(even) .worker-face {
+  background-image: url(https://randomuser.me/api/portraits/lego/3.jpg);
+  /* margin: 0 0 0 -10px; */
+}
 .worker:nth-of-type(even) h2 {
   display: flex;
-  justify-content: flex-end;
+  text-align: right;
 }
 
 .worker:nth-of-type(even) p {
   text-align: right;
 }
+
 /* ----------------------------------------------------SERVICE------------------------------------------ */
 
 .service {
-  height: 65vh;
+  height: auto;
   background: #405d78;
-  /* position: relative; */
-  /* display: flex; */
+  display: flex;
+  flex-direction: column;
+  padding: 1%;
+}
+.serv-wrapper {
+  width: 80%;
+  padding-bottom: 3%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 .serv-title {
-  height: 15vh;
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
+  height: 12vh;
   font-family: Roboto;
   font-style: normal;
   padding-left: 80px;
@@ -216,32 +241,24 @@
   font-size: 36px;
   line-height: 42px;
   color: #ffffff;
-}
-.serv-wrapper {
-  width: 80%;
-  padding: 3%;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  margin-top: 15px;
 }
 .serv-box {
-  margin: 2%;
-  background-color: #f1f1f1;
+  display: flex;
   height: 190px;
   width: 190px;
-  display: flex;
+  margin: 2%;
   justify-content: center;
+  align-items: center;
   border: none;
+  background-color: #f1f1f1;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  /* flex-wrap: wrap; */
-  /* position: relative; */
 }
 .serv-box:hover {
   transform: scale(1.05);
   transition-duration: 0.5s;
 }
+
 .serv {
   font-family: Roboto;
   font-style: normal;
@@ -258,25 +275,30 @@
   height: 22px;
   background: #e07a64;
   border-radius: 50%;
-  margin-top: -10px;
-  margin-left: -200px;
+  margin-top: -190px;
+  margin-left: -190px;
 }
 /* --------------------------------------------FOOTER-------------------------------------------------- */
 .footer {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
   align-items: center;
-  justify-content: space-around;
-  margin-top: 20px;
-  padding-bottom: 20px;
   font-family: Roboto;
-  margin-left: -5px;
   font-weight: bold;
   font-size: 18px;
   line-height: 21px;
   color: #ffffff;
+  padding: 1%;
+}
+.footer div {
+  display: flex;
+  margin-left: 80px;
 }
 .socios {
   display: flex;
+  margin-right: 80px;
 }
 .insta {
   color: #ffffff;
@@ -287,5 +309,5 @@
   color: #ffffff;
   font-size: 31px;
   padding: 3%;
-  margin-left: 10px;
+  margin-left: 8px;
 }
