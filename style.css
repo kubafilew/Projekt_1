@@ -270,13 +270,13 @@ main {
   text-align: center;
 }
 .dot {
-  position: absolute;
+  background: #e07a64;
+  position: relative;
+  right: 12px;
+  bottom: 96px;
   width: 22px;
   height: 22px;
-  background: #e07a64;
   border-radius: 50%;
-  margin-top: -190px;
-  margin-left: -190px;
 }
 /* --------------------------------------------FOOTER-------------------------------------------------- */
 .footer {
@@ -295,10 +295,13 @@ main {
 .footer div {
   display: flex;
   margin-left: 80px;
+  align-items: center;
 }
 .socios {
   display: flex;
   margin-right: 80px;
+  align-items: center;
+  align-content: center;
 }
 .insta {
   color: #ffffff;
