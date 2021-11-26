@@ -10,6 +10,7 @@ html {
   box-sizing: border-box;
   margin: auto auto;
   width: 960px;
+  font-family: "Roboto", sans-serif;
   background-color: gray;
 }
 /* ----------------------------------------HEADER--------------------------------------- */
